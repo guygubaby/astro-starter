@@ -1,7 +1,8 @@
 {
-  "name": "astrolus",
-  "version": "0.0.1",
+  "name": "astro-starter",
+  "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -10,9 +11,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^1.9.2"
+    "astro": "^2.3.0"
   },
   "devDependencies": {
-    "@astrojs/tailwind": "^1.0.0"
+    "@antfu/eslint-config": "^0.38.4",
+    "@astrojs/tailwind": "^3.1.1",
+    "eslint": "^8.38.0",
+    "unocss": "^0.51.4"
   }
 }
