@@ -7,12 +7,15 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
+    "build:vercel": "OUTPUT=vercel astro build",
     "preview": "astro preview",
     "astro": "astro",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "@astrojs/node": "^5.1.1",
+    "@astrojs/vercel": "^3.2.4",
     "@astrojs/vue": "^2.1.1",
     "@vueuse/core": "^10.0.2",
     "astro": "^2.3.0",
@@ -20,10 +23,11 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.38.4",
+    "@iconify/json": "^2.2.50",
+    "@types/node": "^18.15.11",
     "eslint": "^8.38.0",
     "prettier": "^2.8.7",
     "unocss": "^0.51.4",
-    "unplugin-auto-import": "^0.15.3",
-    "unplugin-vue-components": "^0.24.1"
+    "unplugin-auto-import": "^0.15.3"
   }
 }

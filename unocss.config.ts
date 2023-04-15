@@ -6,7 +6,11 @@ export default defineConfig({
       scale: 1.2,
     }),
     presetUno({
-      dark: 'media',
+      dark: 'class',
+      extraProperties: {
+        'display': 'inline-block',
+        'vertical-align': 'middle',
+      },
     }),
     presetAttributify(),
   ],
@@ -36,4 +40,8 @@ export default defineConfig({
       '2xl': '1536px',
     },
   },
+  shortcuts: [
+    ['btn', 'px-6 py-2 rounded inline-block bg-primary text-white cursor-pointer op90 hover:op100 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50'],
+    ['icon-btn', 'text-[0.9em] inline-block cursor-pointer select-none opacity-75 transition duration-200 ease-in-out hover:opacity-100 hover:text-primary !outline-none'],
+  ],
 })
