@@ -3,6 +3,7 @@ import UnoCSS from 'unocss/astro'
 import node from '@astrojs/node'
 import vercel from '@astrojs/vercel/edge'
 import AutoImport from 'unplugin-auto-import/astro'
+import Vue from '@astrojs/vue'
 
 const isDev = process.env.NODE_ENV === 'development'
 
@@ -23,6 +24,9 @@ export default defineConfig({
   output: 'server',
   adapter: getAdapter(),
   integrations: [
+    Vue({
+      reactivityTransform: true,
+    }),
     UnoCSS({
       injectReset: true,
     }),

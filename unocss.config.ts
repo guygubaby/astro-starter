@@ -1,16 +1,21 @@
-import { defineConfig, presetAttributify, presetIcons, presetUno } from 'unocss'
+import { defineConfig, presetAttributify, presetIcons, presetUno, transformerDirectives, transformerVariantGroup } from 'unocss'
 
 export default defineConfig({
+  transformers: [
+    transformerDirectives(),
+    transformerVariantGroup(),
+  ],
   presets: [
     presetIcons({
-      scale: 1.2,
-    }),
-    presetUno({
-      dark: 'class',
+      prefix: 'i-',
       extraProperties: {
         'display': 'inline-block',
         'vertical-align': 'middle',
       },
+      scale: 1.2,
+    }),
+    presetUno({
+      dark: 'class',
     }),
     presetAttributify(),
   ],
@@ -41,7 +46,9 @@ export default defineConfig({
     },
   },
   shortcuts: [
-    ['btn', 'px-6 py-2 rounded inline-block bg-primary text-white cursor-pointer op90 hover:op100 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50'],
-    ['icon-btn', 'text-[0.9em] inline-block cursor-pointer select-none opacity-75 transition duration-200 ease-in-out hover:opacity-100 hover:text-primary !outline-none'],
+    ['btn', 'px-6 py-1 rounded-full text-base font-semibold transition duration-300 inline-block cursor-pointer hover:scale-105 active:duration-75 active:scale-95 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50'],
+    ['btn-primary', 'btn bg-primary text-white'],
+    ['btn-secondary', 'btn bg-primary/10 bg-gradient-to-b border border-transparent text-primary dark:text-white dark:border-gray-700 dark:bg-gray-800'],
+    ['icon-btn', 'text-[0.9em] text-white inline-block cursor-pointer select-none opacity-75 transition duration-200 ease-in-out hover:opacity-100 hover:text-primary !outline-none'],
   ],
 })
