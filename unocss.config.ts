@@ -6,7 +6,7 @@ export default defineConfig({
       scale: 1.2,
     }),
     presetUno({
-      dark: 'class',
+      dark: 'media',
     }),
     presetAttributify(),
   ],

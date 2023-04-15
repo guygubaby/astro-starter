@@ -13,13 +13,17 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "astro": "^2.3.0"
+    "@astrojs/vue": "^2.1.1",
+    "@vueuse/core": "^10.0.2",
+    "astro": "^2.3.0",
+    "vue": "^3.2.47"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.38.4",
-    "@astrojs/tailwind": "^3.1.1",
     "eslint": "^8.38.0",
     "prettier": "^2.8.7",
-    "unocss": "^0.51.4"
+    "unocss": "^0.51.4",
+    "unplugin-auto-import": "^0.15.3",
+    "unplugin-vue-components": "^0.24.1"
   }
 }
