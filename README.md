@@ -1,6 +1,6 @@
 # astro starter
 
-A page template built with astro and tailwindcss using tailus blocks.
+A page template built with astro and UnoCSS using tailus blocks.
 
 ![Astro starter based theme](./public/astrolus-light.png)
 ![Astro starter based dark theme](./public/astrolus-dark.png)
